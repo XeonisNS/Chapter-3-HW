@@ -1,0 +1,45 @@
+/*Malcolm Ealy
+ * mxealy0001@student.stcc.edu
+ * 10/11/21
+ * CSC-111
+ * Homework 5 (Chapter 3)
+ * Define characters with digits 
+ */
+
+import java.util.Scanner;
+
+public class Homework5 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		
+		System.out.print("What is your letter?");
+		String n = input.nextLine();
+		char L = n.charAt(0);
+		int number = 0;
+		if (Character.isLetter(L))
+		{
+			if (L <= 'C')
+				number = 2;
+			else if (L <= 'F')
+				number = 3;
+			else if (L <= 'I')
+				number = 4;
+			else if (L <= 'L')
+				number = 5;
+			else if (L <= 'O')
+				number = 6;
+			else if (L <= 'S')
+				number = 7;
+			else if (L <= 'V')
+				number = 8;
+			else if (L <= 'Z')
+				number = 9;
+			System.out.println("The number that corresponds to your letter is " + number);
+		}
+		else
+			System.out.println("This character does not represent any possible number.");
+	}
+			
+		
+}
